@@ -16,7 +16,7 @@ export default {
   mixins: [countryNameMixin],
   data() {
     return {
-      inputArray: ["AF", "US", "NL", "RU"]
+      inputArray: ["AF", "US", "US", "NL", "RU", "NL", "NL"]
     }
   }
 };

@@ -31,7 +31,7 @@ export default {
   mixins: [clickMixin, countryNameMixin],
   data() {
     return {
-      exampleArray: ["AF", "US", "NL", "RU"]
+      inputArray: ["AF", "US", "NL", "RU"]
     }
   }
 };
