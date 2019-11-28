@@ -1,5 +1,11 @@
 # vue-mixins
 
+## W.I.P. Currently the only interesting docs are:
+```
+Country code converter mixin: /src/components/mixins/countryNameMixin.js
+Component that utilizes the mixin: /src/components/MixinTests.vue
+```
+
 ## Project setup
 ```
 yarn install
