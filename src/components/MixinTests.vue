@@ -1,9 +1,9 @@
 <template>
   <div>
     <div v-for="country in countryNaming" :key="country">
-      {{ example[0] }}
+      {{ country[0] }}
       <br>
-      {{ example[1] }}
+      {{ country[1] }}
     </div>
   </div>
 </template>
