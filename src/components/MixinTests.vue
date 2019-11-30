@@ -15,19 +15,18 @@
       <b>Country code to country name converter:</b><br><br>
       {{countryNaming.slice(0, 3)}}
     </p>
-    <!-- {{example_array}} -->
-    <!-- <div v-for="example in inputArray" :key="example">
-      {{example.country}}
-    </div> -->
-    <!-- <div v-for="country in countryNaming" :key="country">
-      {{ country[0] }}
-      <br>
-      {{ country[1] }}
-    </div> -->
-
-    <!-- let arr = [5, 1, 8];
-let filtered = arr.filter(el => el > 4);
-console.log(filtered) -->
+    <div class="country-table">
+      <table>
+        <tr>
+          <th>Code</th>
+          <th>Name</th>
+        </tr>
+        <tr v-for="country in countryNaming.slice(0, 10)" :key="country">
+          <td>{{ country[0] }}</td>
+          <td>{{ country[1] }}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -76,3 +75,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.country-table table {
+  table-layout: fixed;
+  width: 256px;
+}
+
+.country-table th {
+  text-align: initial;
+}
+
+.country-table td {
+  border-top: 1px solid #999;
+}
+</style>
