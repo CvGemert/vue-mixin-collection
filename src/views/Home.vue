@@ -1,6 +1,5 @@
 <template>
   <div id="home">
-
     <main>
       <section>
         <h2 class="usage">Controls</h2>
@@ -29,10 +28,8 @@ export default {
 
 <style scoped>
 #home {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  font-size: 19px;
+  margin: 0 32px;
+  font-size: 18px;
 }
 
 /* -- grid -- */

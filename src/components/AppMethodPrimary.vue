@@ -1,11 +1,6 @@
 <template>
   <div>
-    <!-- Displaying the raw mock array -->
-    <div>
-      
-    </div>
-
-    <label for="firstmethod">{{$t('firstMethod', 'I have an array, I would like to')}}</label>
+    <label for="firstmethod">{{$t('firstMethod')}}</label>
     <select id="firstmethod" name="select" v-model="selectedFilter">
       <option value="" disabled selected>...</option>
       <option v-for="option in options" :key="option.name" :value="option">
@@ -24,7 +19,7 @@
     <div v-else-if="selectedFilter === options[2]">
 
       <p>
-        <label for="findmethod">{{$t('findMethod', "I'm trying to find")}}</label>
+        <label for="findmethod">{{$t('findMethod')}}</label>
         <select id="findMethod" name="select" v-model="selectedFind">
           <option value="" disabled selected>...</option>
           <option value="single">{{$t('singleItem', 'one item')}}</option>

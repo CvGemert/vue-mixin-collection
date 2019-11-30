@@ -4,7 +4,7 @@
       <h1>Special thanks</h1>
       <p>Some parts of this project contain work originally done by other people than me:</p>
       <div class="disclaimer">
-        ( I'm not affiliated to any of these people / companies.<br>
+        ( I'm not affiliated with any of these people / organizations. 
         They just made some awesome stuff that I <strike>blatantly stole</strike> got inspired by. )
       </div>
     </div>

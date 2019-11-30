@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <div v-for="audience in audience_array" :key="audience">
-      {{audience.tag}}
-    </div> -->
     <div v-for="country in countryNaming" :key="country">
       {{ country[0] }}
       <br>

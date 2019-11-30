@@ -34,13 +34,19 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1,
-h2,
-#nav a {  
+#nav a,
+h1, h2 {  
   font-weight: 600;
   font-family: 'Oxygen', sans-serif;
   text-align: center;
   letter-spacing: .4em;
+  text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {  
+  font-weight: 600;
+  font-family: 'Oxygen', sans-serif;
+  letter-spacing: .2em;
   text-transform: uppercase;
 }
 
