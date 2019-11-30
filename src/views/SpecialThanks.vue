@@ -2,10 +2,10 @@
   <div>
     <div class="header">
       <h1>Special thanks</h1>
-      <p>Some parts of this project contain work originally done by other people than me:</p>
+      <p>Some parts of this project use content originally created by other people:</p>
       <div class="disclaimer">
-        ( I'm not affiliated with any of these people / organizations. 
-        They just made some awesome stuff that I <strike>blatantly stole</strike> got inspired by. )
+        Note: I'm not affiliated in any way with these people / organizations.<br>
+        They just made some awesome stuff that I <strike>blatantly stole</strike> got inspired by.
       </div>
     </div>
     
@@ -43,7 +43,7 @@
         </a><br><br>
         <b>What was used:</b>
         <ul>
-          <li><i>The mock data array in this project was generated using the free version of their tool</i></li>
+          <li><i>The mock data array in this project was generated using their tool</i></li>
         </ul>
       </div>
     </div>

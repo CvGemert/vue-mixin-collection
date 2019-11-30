@@ -5,10 +5,13 @@
 
     <div class="details-section">
       <h3>Data used:</h3>
-      <p>The data array used in this project consists of 1000 objects, each containing 7 key-value pairs.<p>
-      <label for="array-info-checkbox" class="array-info-toggle">
-        <b>More info <i class="material-icons">arrow_drop_down</i></b>
-      </label>
+      <p>
+        The data array used in this project consists of 1000 objects, each containing 7 key-value pairs.
+
+        <label for="array-info-checkbox" class="array-info-toggle">
+          <b>More info <i class="material-icons">arrow_drop_down</i></b>
+        </label>
+      </p>
 
       <div class="array-info-wrapper">
         <mock-data-section />
@@ -55,6 +58,12 @@ h3 {
 
 .array-info-toggle {
   cursor: pointer;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+          box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+  border-radius: 2px;
+  padding: 8px 16px;
+  border: 2px solid #999;
+  display: inline-block;
 }
 
 .array-info-toggle i {
@@ -79,5 +88,12 @@ h3 {
 #array-info-checkbox:checked ~ .details-section .array-info-wrapper {
   height: 500px;
   transition-duration: .3s;
+}
+
+@media screen and (min-width: 992px) {
+  .array-info-toggle {
+    float: right;
+    margin-top: -12px;
+  }
 }
 </style>
