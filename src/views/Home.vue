@@ -1,19 +1,13 @@
 <template>
   <div id="home">
 
-    <details class="details-section">
-      <summary><b style="cursor: pointer;">Show / hide the mock data structure</b></summary>
-      <p>The mock data array consists of 1000 objects with the following structure:</p>
-      <mock-data-section />
-    </details>
-
     <main>
       <section>
-        <h3 class="usage">Controls</h3>
+        <h2 class="usage">Controls</h2>
         <app-method-primary />
       </section>
       <section>
-        <h3 class="usage">Usage</h3>
+        <h2 class="usage">Usage</h2>
         <app-code />
       </section>
     </main>
@@ -23,14 +17,12 @@
 <script>
 import AppMethodPrimary from '@/components/AppMethodPrimary'
 import AppCode from '@/components/AppCode'
-import MockDataSection from '@/components/MockDataSection'
 
 export default {
   name: 'home',
   components: {
     AppMethodPrimary,
     AppCode,
-    MockDataSection
   }
 }
 </script>
@@ -51,11 +43,6 @@ main {
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: minmax(500px, auto);
-}
-
-.details-section {
-  padding: 16px;
-  border-bottom: 2px solid #999;
 }
 
 @media screen and (max-width: 850px) {

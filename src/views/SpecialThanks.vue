@@ -4,8 +4,8 @@
       <h1>Special thanks</h1>
       <p>Some parts of this project contain work originally done by other people than me:</p>
       <div class="disclaimer">
-        (I'm not affiliated to any of these people / companies.<br>
-        They just made some awesome stuff that I <strike>blatantly stole</strike> got inspired by.)
+        ( I'm not affiliated to any of these people / companies.<br>
+        They just made some awesome stuff that I <strike>blatantly stole</strike> got inspired by. )
       </div>
     </div>
     
@@ -88,7 +88,7 @@ a {
 }
 
 .disclaimer {
-  font-size: 13px;
+  font-size: 14px;
   font-style: italic;
 }
 </style>
