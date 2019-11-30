@@ -3,7 +3,7 @@ export default {
   name: 'mockDataMixin', 
   data() {
     return {
-      example_array: [
+      exampleArray: [
         { buzzword: 'project', primary: false, age: '60+', gender: 'male', city: 'Panyarang', country: 'ID', timestamp: '2018-11-28T16:28:13Z' },
         { buzzword: 'customer-loyalty', primary: true, age: '25_34', gender: 'female', city: 'Shitouhe', country: 'CN', timestamp: '2018-12-15T08:54:32Z' },
         { buzzword: 'Centralized', primary: false, age: '60+', gender: 'female', city: 'Abade de Neiva', country: 'PT', timestamp: '2019-09-09T20:17:41Z' },

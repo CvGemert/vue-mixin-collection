@@ -3,8 +3,8 @@ export default {
 
   computed: {
     countryNaming: function() {
-      let arr = Object.entries(this.countries)
-      let namelessCountries = this.inputArray;
+      let arr = Object.entries(this.countries);
+      let namelessCountries = this.countryArray;
       let filtered = arr.filter(el => namelessCountries.includes(el[0]));
 
       return filtered;

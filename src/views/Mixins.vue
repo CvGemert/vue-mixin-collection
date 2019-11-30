@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <MixinTests class="general-wrap"/>
+    <MixinTests/>
     
   </div>
 </template>
