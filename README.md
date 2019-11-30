@@ -1,9 +1,8 @@
 # vue-mixins
 
-## W.I.P. Currently the only interesting docs are:
+## W.I.P. Notes:
 ```
-Country code converter mixin: /src/components/mixins/countryNameMixin.js
-Component that utilizes the mixin: /src/components/MixinTests.vue
+This is currently pretty much a learn-as-you go project for me. For now, I'm using parts of Sarah Drasner's array explorer (https://github.com/sdras/array-explorer) as an example template for the interface. The intention is to diverge more from her work as more functionality is added.
 ```
 
 ## Project setup

@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- <div v-for="audience in audience_array" :key="audience">
+      {{audience.tag}}
+    </div> -->
     <div v-for="country in countryNaming" :key="country">
       {{ country[0] }}
       <br>
@@ -9,11 +12,12 @@
 </template>
 
 <script>
+import mockDataMixin from "./mixins/mockDataMixin";
 import countryNameMixin from "./mixins/countryNameMixin";
 
 export default {
   name: "MixinTest",
-  mixins: [countryNameMixin],
+  mixins: [countryNameMixin, mockDataMixin],
   data() {
     return {
       inputArray: ["AF", "US", "US", "NL", "RU", "NL", "NL"]

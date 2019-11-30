@@ -9,6 +9,9 @@
 </template>
 
 <style lang="scss">
+html {
+  font-family: 'Montserrat', sans-serif;
+}
 .general-wrap {
   padding: 64px;
 }
