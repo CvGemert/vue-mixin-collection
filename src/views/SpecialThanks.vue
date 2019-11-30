@@ -9,32 +9,43 @@
       </div>
     </div>
     
-    <div class="thanks-bro-section first-bro">
-      <h3>
-        <a href="https://sarahdrasnerdesign.com/" target="_blank">Sarah Drasner </a>
-        <i class="material-icons link-icon">open_in_new</i>
-      </h3>
-      <ul>
-        <li>
-          <a href="https://github.com/sdras/array-explorer" target="_blank">Array explorer </a>
-          (MIT License)<i class="material-icons link-icon-s">open_in_new</i>
-        </li>
-        <li>
-          <a href="https://github.com/sdras/object-explorer" target="_blank">Object explorer </a>
-          (MIT License)<i class="material-icons link-icon-s">open_in_new</i>
-        </li>
-      </ul>
-      <b>What was used:</b><br>
-      <i>General inspiration for this project</i> | <i>Several code fragments</i> | <i>Some of the text content</i>
+    <div class="thanks-bro-section">
+
+      <h3>Sarah Drasner</h3>
+      <div class="thanks-bro-details">        
+        <a href="https://sarahdrasnerdesign.com/" target="_blank">
+          <b>Homepage <i class="material-icons link-icon">open_in_new</i></b>
+        </a><br><br>
+        <b>Relevant repositories:</b>
+        <ul>
+          <li>
+            <a href="https://github.com/sdras/array-explorer" target="_blank">Array explorer <i class="material-icons link-icon-s">open_in_new</i></a>
+            (MIT License)
+          </li>
+          <li>
+            <a href="https://github.com/sdras/object-explorer" target="_blank">Object explorer <i class="material-icons link-icon-s">open_in_new</i></a>
+            (MIT License)
+          </li>
+        </ul>
+        <b>What was used:</b>
+        <ul>
+          <li><i>General inspiration for this project</i></li>
+          <li><i>Significant portions of the 'Vanilla JS' section are adaptations of Drasner's work</i></li>
+        </ul>
+      </div>
     </div>
 
     <div class="thanks-bro-section">
-      <h3>
-        <a href="https://mockaroo.com/" target="_blank">Mockaroo </a>
-        <i class="material-icons link-icon">open_in_new</i>
-      </h3>
-      <b>What was used:</b><br>
-      <i>The mock data array in this project was generated using the free version of their tool.</i>
+      <h3>Mockaroo</h3>
+      <div class="thanks-bro-details">
+        <a href="https://mockaroo.com/" target="_blank">
+          <b>Homepage <i class="material-icons link-icon">open_in_new</i></b>
+        </a><br><br>
+        <b>What was used:</b>
+        <ul>
+          <li><i>The mock data array in this project was generated using the free version of their tool</i></li>
+        </ul>
+      </div>
     </div>
     
   </div>
@@ -48,13 +59,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h3 {
+h3 { 
   margin-top: 0;
+  background: #222;
+  width: fit-content;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 2px;
 }
 
-a {
+a { 
   text-decoration: none;
-  color: blue;
+  color: #47a3da;
 }
 
 .link-icon {
@@ -65,26 +81,20 @@ a {
   font-size: 14px;
 }
 
-.link-icon {
-  // position: absolute;
-  // top: 22px;
-  // left: 0px;
-}
-
 .header {
   text-align: center;
+  margin-bottom: 48px;
 }
 
 .thanks-bro-section {
   position: relative;
   padding: 24px;
   margin: 0 64px;
-  border-bottom: 2px solid #999;
+  // border-bottom: 2px solid #999;
 }
 
-.first-bro {
-  margin-top: 48px;
-  border-top: 2px solid #999;
+.thanks-bro-details {
+  margin-left: 16px;
 }
 
 .disclaimer {

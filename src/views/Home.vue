@@ -45,7 +45,7 @@ main {
   grid-auto-columns: minmax(500px, auto);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 991px) {
   main {
     grid-template-columns: 1fr;
   }
