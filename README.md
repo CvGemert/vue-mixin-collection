@@ -1,12 +1,6 @@
 # vue-mixins
 
-## W.I.P. Notes:
-```
-This is currently pretty much a learn-as-you go project for me.
-For now, I'm using parts of Sarah Drasner's array explorer (https://github.com/sdras/array-explorer)
-as an example template for the interface.
-The intention is to diverge more from her work as more functionality is added.
-```
+A collection of vue mixins to manipulate objects and arrays. The interface was inspired by Sarah Drasner's array explorer (https://github.com/sdras/array-explorer). As this is a learn-as-you-go project for me, it currently still contains unashamed copy-pasted fragments of her code. The intention is to diverge more of Drasner's work as the project continues.
 
 ## Project setup
 ```
