@@ -2,15 +2,26 @@
   <div>
     <b>Sub-array extractors:</b>
     <ul>
-      <li>buzzword: {{buzzwordArray.slice(0, 3)}}</li>
-      <li>primary: {{primaryArray.slice(0, 3)}}</li>
-      <li>age: {{ageArray.slice(0, 3)}}</li>
-      <li>gender: {{genderArray.slice(0, 3)}}</li>
-      <li>city {{cityArray.slice(0, 3)}}:</li>
-      <li>country: {{countryArray.slice(0, 3)}}</li>
-      <li>timestamp: {{timestampArray.slice(0, 3)}}</li>
+      <li><b>buzzword:</b> {{buzzwordArray.slice(0, 3)}}</li>
+      <li><b>primary:</b> {{primaryArray.slice(0, 3)}}</li>
+      <li><b>age:</b> {{ageArray.slice(0, 3)}}</li>
+      <li><b>gender:</b> {{genderArray.slice(0, 3)}}</li>
+      <li><b>city:</b> {{cityArray.slice(0, 3)}}:</li>
+      <li><b>country:</b> {{countryArray.slice(0, 3)}}</li>
+      <li><b>timestamp:</b> {{timestampArray.slice(0, 3)}}</li>
     </ul>
     <br>
+    
+    <p>
+      <b>Sort by highest frequency:</b><br>
+      (Buzzwords)
+       <ol>
+        <li v-for="buzzword in sortbyFrequencyBuzzword.slice(0, 10)" :key="buzzword">
+          {{buzzword}}
+        </li>
+      </ol>
+    </p><br>
+    
     <p>
       <b>Country code to country name converter:</b><br><br>
       {{countryNaming.slice(0, 3)}}
@@ -71,6 +82,15 @@ export default {
     timestampArray: function() {
       let inputArray = this.exampleArray.map(el => el.timestamp);
       return inputArray;
+    },
+    sortbyFrequencyBuzzword: function() {
+      let inputArray = this.exampleArray.map(el => el.buzzword);
+      let counts = inputArray.reduce((a, b) => {
+        a[b] = (a[b] || 0) + 1;
+        return a;
+      }, {});
+      let top10 = Object.keys(counts).sort((c, d) => counts[d] - counts[c]);
+      return top10;
     },
   },
 };
