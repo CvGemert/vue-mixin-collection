@@ -2,7 +2,10 @@
 
 ## W.I.P. Notes:
 ```
-This is currently pretty much a learn-as-you go project for me. For now, I'm using parts of Sarah Drasner's array explorer (https://github.com/sdras/array-explorer) as an example template for the interface. The intention is to diverge more from her work as more functionality is added.
+This is currently pretty much a learn-as-you go project for me.
+For now, I'm using parts of Sarah Drasner's array explorer (https://github.com/sdras/array-explorer)
+as an example template for the interface.
+The intention is to diverge more from her work as more functionality is added.
 ```
 
 ## Project setup
