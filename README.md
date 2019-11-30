@@ -1,6 +1,17 @@
 # vue-mixins
 
-A collection of vue mixins to manipulate objects and arrays. The interface was inspired by Sarah Drasner's array explorer (https://github.com/sdras/array-explorer). As this is a learn-as-you-go project for me, it currently still contains unashamed copy-pasted fragments of her code. The intention is to diverge more of Drasner's work as the project continues.
+A collection of vue mixins to manipulate objects and arrays.<br><br>
+The original inspiration for this project was Sarah Drasner's array explorer (https://github.com/sdras/array-explorer). It currently still contains parts of her work as a template.
+
+## W.I.P. / Roadmap status:
+```
+Status on 30 - 11 - 2019:
+Still getting started setting everything up. General plans for this project:
+- Section about vanilla javascript array / object manipulation with generalized examples.
+- Section about using vue mixins for array / object manipulations, applied to a mock data array.
+  * The mock data array consists of 1000 objects, each containing 7 key-value pairs.
+- Section about best practices for these vue mixins
+```
 
 ## Project setup
 ```
