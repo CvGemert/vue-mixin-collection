@@ -9,10 +9,9 @@
       </div>
     </div>
     
-    <div class="thanks-bro-section">
-
-      <h3>Sarah Drasner</h3>
-      <div class="thanks-bro-details">        
+    <div class="thanks-bro-wrapper">
+      <div class="thanks-bro-section">
+        <h3>Sarah Drasner</h3>     
         <a href="https://sarahdrasnerdesign.com/" target="_blank">
           <b>Homepage <i class="material-icons link-icon">open_in_new</i></b>
         </a><br><br>
@@ -33,11 +32,9 @@
           <li><i>Significant portions of the 'Vanilla JS' section are adaptations of Drasner's work</i></li>
         </ul>
       </div>
-    </div>
 
-    <div class="thanks-bro-section">
-      <h3>Mockaroo</h3>
-      <div class="thanks-bro-details">
+      <div class="thanks-bro-section">
+        <h3>Mockaroo</h3>
         <a href="https://mockaroo.com/" target="_blank">
           <b>Homepage <i class="material-icons link-icon">open_in_new</i></b>
         </a><br><br>
@@ -86,15 +83,17 @@ a {
   margin-bottom: 48px;
 }
 
+.thanks-bro-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .thanks-bro-section {
   position: relative;
   padding: 24px;
-  margin: 0 64px;
-  // border-bottom: 2px solid #999;
-}
-
-.thanks-bro-details {
-  margin-left: 16px;
+  width: 480px;
+  border-bottom: 2px solid #999;
 }
 
 .disclaimer {

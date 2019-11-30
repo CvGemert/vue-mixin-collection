@@ -1,6 +1,7 @@
 <template>
   <div>
     <b>Sub-array extractors:</b>
+    <!-- {{extractSubArray}} -->
     <ul>
       <li><b>buzzword:</b> {{buzzwordArray.slice(0, 3)}}</li>
       <li><b>primary:</b> {{primaryArray.slice(0, 3)}}</li>
@@ -44,45 +45,17 @@
 <script>
 import mockDataMixin from "./mixins/mockDataMixin";
 import countryNameMixin from "./mixins/countryNameMixin";
+import extractSubArrayMixin from "./mixins/extractSubArrayMixin";
 
 export default {
   name: "MixinTest",
-  mixins: [countryNameMixin, mockDataMixin],
+  mixins: [mockDataMixin, countryNameMixin, extractSubArrayMixin],
   data() {
     return {
       // inputArray: [],
     }
   },
   computed: {
-    // creates a new array from the specified key-value pair in all objects
-    buzzwordArray: function() {
-      let inputArray = this.exampleArray.map(el => el.buzzword);
-      return inputArray;
-    },
-    primaryArray: function() {
-      let inputArray = this.exampleArray.map(el => el.primary);
-      return inputArray;
-    },
-    ageArray: function() {
-      let inputArray = this.exampleArray.map(el => el.age);
-      return inputArray;
-    },
-    genderArray: function() {
-      let inputArray = this.exampleArray.map(el => el.gender);
-      return inputArray;
-    },
-    cityArray: function() {
-      let inputArray = this.exampleArray.map(el => el.city);
-      return inputArray;
-    },
-    countryArray: function() {
-      let inputArray = this.exampleArray.map(el => el.country);
-      return inputArray;
-    },
-    timestampArray: function() {
-      let inputArray = this.exampleArray.map(el => el.timestamp);
-      return inputArray;
-    },
     sortbyFrequencyBuzzword: function() {
       let inputArray = this.exampleArray.map(el => el.buzzword);
       let counts = inputArray.reduce((a, b) => {
