@@ -10,19 +10,31 @@
     </div>
     
     <div class="thanks-bro-section first-bro">
-      <h3><a href="https://sarahdrasnerdesign.com/" target="_blank">Sarah Drasner:</a></h3>
+      <h3>
+        <a href="https://sarahdrasnerdesign.com/" target="_blank">Sarah Drasner </a>
+        <i class="material-icons link-icon">open_in_new</i>
+      </h3>
       <ul>
-        <li><a href="https://github.com/sdras/array-explorer" target="_blank">Array explorer</a> (MIT License)</li>
-        <li><a href="https://github.com/sdras/object-explorer" target="_blank">Object explorer</a> (MIT License)</li>
+        <li>
+          <a href="https://github.com/sdras/array-explorer" target="_blank">Array explorer </a>
+          (MIT License)<i class="material-icons link-icon-s">open_in_new</i>
+        </li>
+        <li>
+          <a href="https://github.com/sdras/object-explorer" target="_blank">Object explorer </a>
+          (MIT License)<i class="material-icons link-icon-s">open_in_new</i>
+        </li>
       </ul>
       <b>What was used:</b><br>
-      <i>General inspiration for this project</i> | <i>Multiple code snippets</i> | <i>Some of the text content</i>
+      <i>General inspiration for this project</i> | <i>Several code fragments</i> | <i>Some of the text content</i>
     </div>
 
     <div class="thanks-bro-section">
-      <h3><a href="https://mockaroo.com/" target="_blank">Mockaroo:</a></h3>
+      <h3>
+        <a href="https://mockaroo.com/" target="_blank">Mockaroo </a>
+        <i class="material-icons link-icon">open_in_new</i>
+      </h3>
       <b>What was used:</b><br>
-      <i>Generating the mock data array used in this project</i>
+      <i>The mock data array in this project was generated using the free version of their tool.</i>
     </div>
     
   </div>
@@ -40,12 +52,32 @@ h3 {
   margin-top: 0;
 }
 
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.link-icon {
+  font-size: 18px;
+}
+
+.link-icon-s {
+  font-size: 14px;
+}
+
+.link-icon {
+  // position: absolute;
+  // top: 22px;
+  // left: 0px;
+}
+
 .header {
   text-align: center;
 }
 
 .thanks-bro-section {
-  padding: 24px 16px;
+  position: relative;
+  padding: 24px;
   margin: 0 64px;
   border-bottom: 2px solid #999;
 }
@@ -54,7 +86,6 @@ h3 {
   margin-top: 48px;
   border-top: 2px solid #999;
 }
-
 
 .disclaimer {
   font-size: 13px;
