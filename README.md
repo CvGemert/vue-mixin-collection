@@ -1,4 +1,4 @@
-# vue-mixins
+# Vue mixin explorer
 
 A collection of vue mixins to manipulate objects and arrays.<br><br>
 The original inspiration for this project was Sarah Drasner's array explorer (https://github.com/sdras/array-explorer). It currently still uses parts of her work as a template.
