@@ -115,6 +115,7 @@ h3, h4, h5, h6 {
 @media screen and (max-width: 991px) {
   #main-content {
     transition-duration: .3s;
+    height: calc(100vh - 64px);
   }
 
   #menu-checkbox:checked ~ #main-content {

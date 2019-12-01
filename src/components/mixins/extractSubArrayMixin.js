@@ -1,15 +1,9 @@
 export default {
   // Creates new sub-arrays from the specified key-value pairs in all objects
   name: 'extractSubArrayMixin',
-  data() {
-    return {
-      // extractSubArray: [],
-    }
-  },
   computed: {
     buzzwordArray: function() {
       let inputArray = this.exampleArray.map(el => el.buzzword);
-      // this.extractSubArray.push(inputArray);
       return inputArray;
     },
     primaryArray: function() {
