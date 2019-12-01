@@ -26,17 +26,34 @@
       <b>Country code to country name converter:</b><br><br>
     </p>
     <div class="country-table">
-      <table>
-        <tr>
-          <th>Code</th>
-          <th>Name</th>
-        </tr>
-        <tr v-for="country in countryNamingFrequency.slice(0, 10)" :key="country">
-          <td>{{ country[0] }}</td>
-          <td>{{ country[1] }}</td>
-        </tr>
-        
-      </table>
+      <span>
+        Ordered by frequency
+        <table>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+          </tr>
+          <tr v-for="country in countryNamingFrequency.slice(0, 10)" :key="country">
+            <td>{{ country[0] }}</td>
+            <td>{{ country[1] }}</td>
+          </tr>
+        </table>
+      </span>
+
+      <span>
+        Same order as input-array
+        <table>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+          </tr>
+          <tr v-for="country in countryNamingUnsorted.slice(0, 10)" :key="country">
+            <td>{{ country[0] }}</td>
+            <td>{{ country[1] }}</td>
+          </tr>
+        </table>
+      </span>
+      
     </div>
   </div>
 </template>
@@ -72,6 +89,12 @@ export default {
   margin: 16px 4px;
   border: 2px solid #999;
   border-radius: 3px;
+}
+
+.country-table {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .country-table table {

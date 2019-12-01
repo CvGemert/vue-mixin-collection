@@ -3,7 +3,21 @@ export default {
 
   computed: {
     // Returns names in the same order as the input-array of 'let namelessCountries'.
-    // In this case, the order of country names remains the same as the order of country codes in sortbyFrequencyCountry
+    countryNamingUnsorted: function () {
+      let namelessCountries = this.countryArray;
+      let countryList = Object.entries(this.countries);
+      let sortedNames = [];
+
+      for (var name of namelessCountries) {
+        for (var country of countryList) {
+          if (country[0] === name) {
+            sortedNames.push(country);
+          }
+        }
+      }
+      return sortedNames;
+    },
+    // Returns names in the same order as the input-array of 'let namelessCountries'.
     countryNamingFrequency: function () {
       let namelessCountries = this.sortbyFrequencyCountry;
       let countryList = Object.entries(this.countries);
