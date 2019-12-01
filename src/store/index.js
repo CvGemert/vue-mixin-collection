@@ -34,8 +34,3 @@ Vue.use(vuexI18n.plugin, store)
 Vue.i18n.add('en', translationsEn)
 
 Vue.i18n.set(store.state.curLanguage)
-
-// registering only the current language
-// would be also possible but unloading & loading would be required
-// at language change --> can be added later (for now load all langauges)
-// store.registerModule('de', de);

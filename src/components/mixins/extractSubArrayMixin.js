@@ -1,7 +1,25 @@
 export default {
-  // Creates new sub-arrays from the specified key-value pairs in all objects
+  
   name: 'extractSubArrayMixin',
   computed: {
+      
+    // Creates 1 single array containing multiple sub-arrays composed of the specified key-value pairs in all objects
+    categorizedArray: function() {
+      let buzzwordArray = this.exampleArray.map(el => el.buzzword);
+      let primaryArray = this.exampleArray.map(el => el.primary);
+      let ageArray = this.exampleArray.map(el => el.age);
+      let genderArray = this.exampleArray.map(el => el.gender);
+      let cityArray = this.exampleArray.map(el => el.city);
+      let countryArray = this.exampleArray.map(el => el.country);
+      let timestampArray = this.exampleArray.map(el => el.timestamp);
+
+      let totalArray = [];
+      totalArray.push(buzzwordArray, primaryArray, ageArray, genderArray, cityArray, countryArray, timestampArray);
+      
+      return totalArray;
+    },
+
+    // Creates new seperated sub-arrays from the specified key-value pairs in all objects
     buzzwordArray: function() {
       let inputArray = this.exampleArray.map(el => el.buzzword);
       return inputArray;

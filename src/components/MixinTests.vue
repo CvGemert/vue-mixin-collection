@@ -3,13 +3,24 @@
     <br>
     <b>Sub-array extractors:</b>
     <ul>
-      <li><b>buzzword:</b> {{buzzwordArray.slice(0, 3)}}</li>
-      <li><b>primary:</b> {{primaryArray.slice(0, 3)}}</li>
-      <li><b>age:</b> {{ageArray.slice(0, 3)}}</li>
-      <li><b>gender:</b> {{genderArray.slice(0, 3)}}</li>
-      <li><b>city:</b> {{cityArray.slice(0, 3)}}:</li>
-      <li><b>country:</b> {{countryArray.slice(0, 3)}}</li>
-      <li><b>timestamp:</b> {{timestampArray.slice(0, 3)}}</li>
+      Split into seperate arrays:
+      <li><b>buzzwordArray:</b> {{buzzwordArray.slice(0, 3)}}</li>
+      <li><b>primaryArray:</b> {{primaryArray.slice(0, 3)}}</li>
+      <li><b>ageArray:</b> {{ageArray.slice(0, 3)}}</li>
+      <li><b>genderArray:</b> {{genderArray.slice(0, 3)}}</li>
+      <li><b>cityArray:</b> {{cityArray.slice(0, 3)}}:</li>
+      <li><b>countryArray:</b> {{countryArray.slice(0, 3)}}</li>
+      <li><b>timestampArray:</b> {{timestampArray.slice(0, 3)}}</li>
+    </ul>
+    <ul>
+      In 1 single array:
+      <li><b>categorizedArray[0]:</b> {{categorizedArray[0].slice(0, 3)}}</li>
+      <li><b>categorizedArray[1]:</b> {{categorizedArray[1].slice(0, 3)}}</li>
+      <li><b>categorizedArray[2]:</b> {{categorizedArray[2].slice(0, 3)}}</li>
+      <li><b>categorizedArray[3]:</b> {{categorizedArray[3].slice(0, 3)}}</li>
+      <li><b>categorizedArray[4]:</b> {{categorizedArray[4].slice(0, 3)}}</li>
+      <li><b>categorizedArray[5]:</b> {{categorizedArray[5].slice(0, 3)}}</li>
+      <li><b>categorizedArray[6]:</b> {{categorizedArray[6].slice(0, 3)}}</li>
     </ul>
     <br>
     

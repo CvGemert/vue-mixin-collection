@@ -1,6 +1,5 @@
 export default {
   name: 'countryNameMixin',
-
   computed: {
     // Returns names in the same order as the input-array of 'let namelessCountries'.
     countryNamingUnsorted: function () {
