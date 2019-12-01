@@ -13,15 +13,39 @@
     </ul>
     <br>
     
-    <p>
-      <b>Sort by highest frequency:</b><br>
-      (Buzzwords)
-       <ol>
-        <li v-for="buzzword in sortbyFrequencyBuzzword.slice(0, 10)" :key="buzzword">
-          {{buzzword}}
-        </li>
-      </ol>
-    </p><br>
+    <b>Sort by highest frequency:</b><br>
+      <div class="frequency-section">
+        <span>
+          Buzzwords
+          <ol>
+            <li v-for="buzzword in sortbyFrequencyBuzzword.slice(0, 10)" :key="buzzword">{{buzzword}}</li>
+          </ol>
+        </span>
+        <span>
+          Age
+          <ol>
+            <li v-for="age in sortbyFrequencyAge.slice(0, 10)" :key="age">{{age}}</li>
+          </ol>
+        </span>
+        <span>
+          Gender
+          <ol>
+            <li v-for="gender in sortbyFrequencyGender.slice(0, 10)" :key="gender">{{gender}}</li>
+          </ol>
+        </span>
+        <span>
+          City
+          <ol>
+            <li v-for="city in sortbyFrequencyCity.slice(0, 10)" :key="city">{{city}}</li>
+          </ol>
+        </span>
+        <span>
+          Country
+          <ol>
+            <li v-for="country in sortbyFrequencyCountry.slice(0, 10)" :key="country">{{country}}</li>
+          </ol>
+        </span>
+    </div><br>
     
     <p>
       <b>Country code to country name converter:</b><br><br>
@@ -46,30 +70,35 @@
 import mockDataMixin from "./mixins/mockDataMixin";
 import countryNameMixin from "./mixins/countryNameMixin";
 import extractSubArrayMixin from "./mixins/extractSubArrayMixin";
+import sortbyFrequencyMixin from "./mixins/sortbyFrequencyMixin";
 
 export default {
   name: "MixinTest",
-  mixins: [mockDataMixin, countryNameMixin, extractSubArrayMixin],
-  data() {
-    return {
-      // inputArray: [],
-    }
-  },
-  computed: {
-    sortbyFrequencyBuzzword: function() {
-      let inputArray = this.exampleArray.map(el => el.buzzword);
-      let counts = inputArray.reduce((a, b) => {
-        a[b] = (a[b] || 0) + 1;
-        return a;
-      }, {});
-      let top10 = Object.keys(counts).sort((c, d) => counts[d] - counts[c]);
-      return top10;
-    },
-  },
+  mixins: [
+    mockDataMixin,          // Mock array filled with objects
+    countryNameMixin,       // Converts country code to country name
+    extractSubArrayMixin,   // Creates new categorized sub-arrays from the mockDataMixin array for each key-value type in the nested objects
+    sortbyFrequencyMixin,   // Sort array in order of most to least common frequency.
+  ],
 };
 </script>
 
 <style>
+.frequency-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.frequency-section span {
+  height: 256px;
+  width: 212px;
+  padding: 8px;
+  margin: 16px 4px;
+  border: 2px solid #999;
+  border-radius: 3px;
+}
+
 .country-table table {
   table-layout: fixed;
   width: 256px;
