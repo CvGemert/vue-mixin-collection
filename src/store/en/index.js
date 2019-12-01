@@ -1,6 +1,5 @@
 export default {
   state: {
-    selectedMethod: '',
     adding: [
       {
         name: 'splice',
