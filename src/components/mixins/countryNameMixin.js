@@ -12,7 +12,7 @@ export default {
       for (var name of namelessCountries) {
         for (var country of countryList) {
           if (country[0] === name) {
-            sortedNames.push(country[1]);
+            sortedNames.push(country);
           }
         }
       }

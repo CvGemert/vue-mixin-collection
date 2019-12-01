@@ -19,12 +19,11 @@
         <span>Age <ol><li v-for="age in sortbyFrequencyAge.slice(0, 10)" :key="age">{{age}}</li></ol></span>
         <span>Gender <ol><li v-for="gender in sortbyFrequencyGender.slice(0, 10)" :key="gender">{{gender}}</li></ol></span>
         <span>City <ol><li v-for="city in sortbyFrequencyCity.slice(0, 10)" :key="city">{{city}}</li></ol></span>
-        <span>Country <ol><li v-for="country in countryNamingFrequency.slice(0, 10)" :key="country">{{country}}</li></ol></span>
+        <span>Country <ol><li v-for="country in countryNamingFrequency.slice(0, 10)" :key="country">{{country[1]}}</li></ol></span>
     </div><br>
     
     <p>
       <b>Country code to country name converter:</b><br><br>
-      {{countryNamingFrequency.slice(0, 3)}}
     </p>
     <div class="country-table">
       <table>
@@ -32,13 +31,10 @@
           <th>Code</th>
           <th>Name</th>
         </tr>
-        <!-- <tr v-for="country in countryNaming.slice(0, 10)" :key="country">
+        <tr v-for="country in countryNamingFrequency.slice(0, 10)" :key="country">
           <td>{{ country[0] }}</td>
           <td>{{ country[1] }}</td>
-        </tr> -->
-        <!-- <tr v-for="country in Object.values(countryNaming)" :key="country">
-          <td v-if="sortbyFrequencyCountry.slice(0, 10).includes(country[0])">{{ country[1] }}</td>
-        </tr> -->
+        </tr>
         
       </table>
     </div>
