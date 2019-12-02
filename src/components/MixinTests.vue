@@ -1,7 +1,8 @@
 <template>
   <div>
     <br>
-    <b>Sub-array extractors:</b>
+    <b>Sub-array extractors:</b><br>
+    <i>(All results reduced to first 3 elements for brevity's sake)</i>
     <ul>
       Split into seperate arrays:
       <li><b>buzzwordArray:</b> {{buzzwordArray.slice(0, 3)}}</li>
